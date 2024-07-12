@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 // import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar/Navbar";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-Outfit my-4 mx-12" suppressHydrationWarning={true}>
+      <body
+        className="font-Outfit my-4 mx-12 bg-black"
+        suppressHydrationWarning={true}
+      >
+        <Navbar />
         {children}
       </body>
     </html>
